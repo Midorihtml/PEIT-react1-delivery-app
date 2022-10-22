@@ -19,6 +19,29 @@
         margin: 0 auto;
     }
 
+    .distance {
+        background-color: #F1F2F6;
+        opacity: 60%;
+        backdrop-filter: blur(2px);
+        position: absolute;
+        left: 5.67%;
+        right: 72.27%;
+        bottom: 48.02%;
+        border-radius: 10px;
+        width: 64px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .distanceText {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: #0A191E;
+        font-size: 12px;
+    }
+
     .title {
         font-size: 14px;
         margin: 8px 7px;

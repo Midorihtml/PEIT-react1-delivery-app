@@ -18,7 +18,6 @@ export const useRating = (rating) => {
             <div className={styles.ratingWrapper}>
                 <FontAwesomeIcon className={styles.smile} icon={faFaceMeh} />
                 <p className={styles.smile}>{rating} %</p>
-
             </div>
         )
     }

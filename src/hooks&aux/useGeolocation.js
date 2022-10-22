@@ -5,7 +5,7 @@ export const useGeolocation = () => {
     React.useMemo(() => {
         const succes = (data) => {
             const { latitude, longitude } = data.coords;
-            setLocation({ latitude, longitude });
+            setLocation({ lat: latitude, lon: longitude });
         };
         navigator.geolocation.getCurrentPosition(succes);
         // eslint-disable-next-line react-hooks/exhaustive-deps
