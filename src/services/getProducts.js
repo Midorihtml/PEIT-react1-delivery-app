@@ -10,6 +10,7 @@ const nextPage = async (res) => {
     }
 
     if (next <= last) {
+        next = "https" + next.slice(4)
         const nextFetch = await fetch(next);
         const nextPage = await nextFetch.json();
         initialPage++;
