@@ -1,0 +1,81 @@
+.card {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    scale: 1.14;
+    animation-name: activeCard;
+    animation-duration: 1s;
+}
+
+.disable {
+    position: relative;
+    transition: 1s;
+    animation: closeCard 1s;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-weight: bold;
+    color: #222;
+    background: rgba(10, 25, 30, 0.28);
+    backdrop-filter: blur(2px);
+    padding: .2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 5%;
+    right: 8%;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.addToCart {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    border: transparent;
+    z-index: 1;
+    background: #FECA57;
+    border-radius: 10px;
+    padding: .5rem;
+    bottom: 15%;
+    right: 8%;
+}
+
+.added {
+    position: absolute;
+    color: #444;
+    bottom: 15%;
+    right: 4%;
+    background: #FECA57;
+    width: max-content;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+@keyframes activeCard {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes closeCard {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

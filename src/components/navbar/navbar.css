@@ -1,0 +1,21 @@
+@media screen and (max-width: 767px) {
+  .navBar {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    height: 63px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    
+  }
+
+  .navBar a{
+    text-decoration: none;
+    
+  }
+
+
+}

@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 15px;
+    position: absolute;
+    bottom: 13vh;
+    width: 100%;
+}
+
+.imgBg {
+    background-color: #FEEBC1;
+    width: 88px;
+    height: 55px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0A191E;
+    width: 52vw;
+}
+
+.fee {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #0A191E;
+}

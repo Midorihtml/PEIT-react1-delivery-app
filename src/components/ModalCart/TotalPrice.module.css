@@ -1,0 +1,8 @@
+.totalPrice {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: 8vh;
+    margin-left: 15px;
+}

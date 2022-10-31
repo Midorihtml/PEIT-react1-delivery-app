@@ -1,0 +1,19 @@
+.button {
+    background-color: #31B9CC;
+    border: transparent;
+    border-radius: 10px;
+    width: 143px;
+    height: 45px;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #0A191E;
+    position: absolute;
+    bottom: 7vh;
+    right: 4vw;
+}
+
+.arrow {
+    margin-left: 10px;
+}
