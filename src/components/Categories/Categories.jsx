@@ -4,11 +4,11 @@ import { getCategoryByHour } from '../../hooks&aux/getCategoryByHour';
 import { getProductCategory } from '../../services';
 import styles from './Categories.module.css'
 
-export const Categories = ({ setInitialProducts, setProducts, setLoading }) => {
+export const Categories = ({ pagination, setInitialProducts, setProducts, setLoading }) => {
     const inactiveSvgColor = '#0A191E';
     const activeSvgColor = '#F1F2F6';
     const [ref, setRef] = useState(getCategoryByHour())
-
+    const { setPage } = pagination;
 
     /**
      * When a user clicks on a category, the function will set the state of the category to the id of the
@@ -31,12 +31,13 @@ export const Categories = ({ setInitialProducts, setProducts, setLoading }) => {
     }
 
     useEffect(() => {
+        setPage(1)
         getProductCategory(ref).then(res => {
             setInitialProducts(res)
             setProducts(res.slice(0, 3))
             setLoading(false)
         })
-    }, [ref, setInitialProducts, setProducts, setLoading])
+    }, [setPage, ref, setInitialProducts, setProducts, setLoading])
 
     return (
         <section className={styles.wrapper}>

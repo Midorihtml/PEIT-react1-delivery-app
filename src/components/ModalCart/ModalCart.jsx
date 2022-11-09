@@ -28,14 +28,15 @@ function ModalCart({ isOpenModal, setIsOpenModal, firstRef, openEditAddress, use
       </div>
       <div className={`modalBackground ${isOpenModal ? "Open" : ""}`}>
         <OutsideAlerter ref={firstRef} setIsOpenModal={setIsOpenModal}>
-          <FontAwesomeIcon
-            icon={faXmark}
-            className="closeButton"
-            onClick={closeButton}
-          />
+
 
           <div className="modalTitle">
             <h1>Your Order</h1>
+            <FontAwesomeIcon
+              icon={faXmark}
+              className="closeButton"
+              onClick={closeButton}
+            />
           </div>
           <Address setIsOpenModal={setIsOpenModal} openEditAddress={openEditAddress} userInfo={userInfo} />
           <CartProducts />

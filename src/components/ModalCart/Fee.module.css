@@ -1,10 +1,11 @@
 .wrapper {
     display: flex;
     align-items: center;
-    margin: 0 0 0 15px;
+    margin: 0 0 .7rem 1rem;
     position: absolute;
     bottom: 13vh;
     width: 100%;
+    background-color: #fff;
 }
 
 .imgBg {

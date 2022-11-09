@@ -45,7 +45,7 @@ export const Home = ({ handleOpenModal }) => {
             <Header onClick={handleOpenModal} />
             <Searchbar onSearchSubmit={input => onSearchSubmit(input)}
                 clearResults={clearResults} />
-            <Categories setInitialProducts={setInitialProducts} setProducts={setProducts} setLoading={setLoading} />
+            <Categories pagination={{ setPage }} setInitialProducts={setInitialProducts} setProducts={setProducts} setLoading={setLoading} />
             {loading ? <> <Skeleton /> <Skeleton /> </> : <Products id='productList' arrayProduct={products} search={restaurants} />}
             {loadSkeleton && <><Skeleton /></>}
         </div>

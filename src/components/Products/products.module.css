@@ -6,6 +6,7 @@
         margin-top: 1rem;
         bottom: 3.5em;
         align-items: center;
+        overflow: hidden;
     }
 
     .title {

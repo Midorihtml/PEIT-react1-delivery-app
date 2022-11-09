@@ -47,7 +47,7 @@ export const CardModal = ({ card, product, opened, setOpened, id }) => {
           <button
             onClick={() => {
               postCart(product)
-                .then(() => { dispatch({ type: "ADD_TO_CART", payload: product }); setModal(false) });
+                .then(() => { dispatch({ type: "ADD_TO_CART", payload: product }); setModal(false); setOpened(null) });
             }}
             className={styles.addToCart}>Add
             <img src={cartIcon}

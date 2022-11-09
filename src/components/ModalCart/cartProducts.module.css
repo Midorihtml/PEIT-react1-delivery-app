@@ -1,14 +1,23 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 26.8vh;
-    position: absolute;
-    bottom: 21vh;
-    overflow-y: scroll;
+@media screen and (max-width:767px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-height: 355px;
+        height: 38vh;
+        margin-bottom: 23vh;
+        touch-action: pan-y;
+        overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
-.wrapper img div p {
-    touch-action: pan-y;
-    overflow-y: scroll;
+@media screen and (max-width: 375px) {
+    .wrapper {
+        height: 35%;
+        margin-bottom: 23.5vh;
+    }
 }

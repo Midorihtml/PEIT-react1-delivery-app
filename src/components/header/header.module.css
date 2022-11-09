@@ -22,6 +22,7 @@
     .cartItems {
         color: #ffffff;
         font-weight: medium;
+        font-family: 'Roboto', sans-serif;
     }
 
     .cartWrapper {
