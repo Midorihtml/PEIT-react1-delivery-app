@@ -3,11 +3,13 @@
         display: grid;
         position: relative;
         justify-content: center;
+        margin-top: 1rem;
+        bottom: 3.5em;
+        align-items: center;
     }
 
     .title {
         font-size: 16px;
-        margin-left: 0.5rem;
-        line-height: 20px;
+        line-height: 0px;
     }
 }

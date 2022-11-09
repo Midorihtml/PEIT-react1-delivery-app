@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    animation: slide 1s;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+    color: #000;
+}
+
+.close {
+    align-self: flex-end;
+    margin: 1.5rem 2rem 0 0;
+    position: absolute;
+    top: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

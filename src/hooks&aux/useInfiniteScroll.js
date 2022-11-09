@@ -1,19 +1,25 @@
 import React from "react";
 
-export const useInfiniteScroll = (get, state, setState, setLoading) => {
+export const useInfiniteScroll = (currentPage, setCurrentPage, initialState, state, setState, setLoading) => {
     React.useEffect(() => {
         const handleScroll = async () => {
             setLoading(true);
             if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) return;
-            const nextPage = await get('next');
-            if (nextPage) {
+
+            let elements = currentPage * 3;
+            const pages = Math.ceil(initialState.length / 3);
+
+            if (pages > 1 && currentPage <= pages) {
+                const nextPage = initialState.slice(elements, elements + 3);
                 setState([...state, ...nextPage]);
+                setCurrentPage(currentPage + 1);
                 setLoading(false);
             }
+
             window.removeEventListener("scroll", handleScroll);
             setLoading(false);
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [get, state, setState, setLoading]);
+    }, [currentPage, setCurrentPage, initialState, state, setState, setLoading]);
 };

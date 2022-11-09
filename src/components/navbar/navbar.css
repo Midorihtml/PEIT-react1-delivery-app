@@ -8,13 +8,14 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow: hidden;
     z-index: 2;
-    
+
   }
 
-  .navBar a{
+  .navBar a {
     text-decoration: none;
-    
+
   }
 
 

@@ -8,7 +8,7 @@ export const getTitleByHour = () => {
             <h2 className={styles.title}>Breakfast Restaurants Near You</h2>
         );
     }
-    if (hour >= 11 && hour < 14) {
+    if (hour >= 10 && hour < 14) {
         return (
             <h2 className={styles.title}>Lunch Restaurants Near You</h2>
         );
