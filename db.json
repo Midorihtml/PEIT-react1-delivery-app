@@ -1,164 +1,159 @@
 {
-    "restaurants": [
-        {
-            "id": 1,
-            "name": "Noah's Bagle",
-            "rating": 4.5,
-            "lat": -38.542904,
-            "lon": -58.710933
-        },
-        {
-            "id": 2,
-            "name": "La Pampa",
-            "rating": 4.5,
-            "lat": -25.542904,
-            "lon": -58.710933
-        },
-        {
-            "id": 3,
-            "name": "Santa rosa",
-            "rating": 4.5,
-            "lat": -13.542904,
-            "lon": -58.710933
-        }
-    ],
-    "categories": [
-        {
-            "id": 1,
-            "name": "dinner"
-        },
-        {
-            "id": 2,
-            "name": "lunch"
-        },
-        {
-            "id": 3,
-            "name": "breakfast"
-        },
-        {
-            "id": 4,
-            "name": "dessert"
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "name": "donas",
-            "price": 25,
-            "rating": 99,
-            "category": [
-                "breakfast",
-                "dessert"
-            ],
-            "img": "https://th.bing.com/th/id/R.efa5f2d2f99535b34aca89283934d7f4?rik=CAmzLhynHzHTsQ&pid=ImgRaw&r=0",
-            "restaurantId": 1
-        },
-        {
-            "id": 2,
-            "name": "Milanesa",
-            "price": 1600,
-            "rating": 100,
-            "category": [
-                "lunch",
-                "dinner"
-            ],
-            "img": "https://vinomanos.com/wp-content/uploads/2019/09/Milanesa-perfecta.jpg",
-            "restaurantId": 1
-        },
-        {
-            "id": 3,
-            "name": "Hamburguesa",
-            "price": 900,
-            "rating": 30,
-            "category": [
-                "lunch",
-                "dinner"
-            ],
-            "img": "https://th.bing.com/th/id/R.45239b0e225c231bc173114a2869773d?rik=3j%2f35HmFiM%2bLGA&pid=ImgRaw&r=0",
-            "restaurantId": 1
-        },
-        {
-            "id": 4,
-            "name": "Café con medialunas",
-            "price": 400,
-            "rating": 80,
-            "category": [
-                "breakfast"
-            ],
-            "img": "https://mcdn.wallpapersafari.com/medium/42/80/4yhGSc.jpg",
-            "restaurantId": 2
-        },
-        {
-            "id": 5,
-            "name": "facturas",
-            "price": 100,
-            "rating": 19,
-            "category": [
-                "breakfast",
-                "dessert"
-            ],
-            "img": "https://img.milanuncios.com/fg/2968/55/296855420_9.jpg?VersionId=77Kl7XPu2_8iCLx_y10r7aTJMMcJpte8",
-            "restaurantId": 2
-        },
-        {
-            "id": 6,
-            "name": "Helado",
-            "price": 1200,
-            "rating": 73,
-            "category": [
-                "dessert"
-            ],
-            "img": "https://th.bing.com/th/id/OIP.yi-mkZVCC4aIv4ce80diyAHaFL?pid=ImgDet&w=1000&h=700&rs=1",
-            "restaurantId": 2
-        },
-        {
-            "id": 7,
-            "name": "cono de papas",
-            "price": 25,
-            "rating": 20,
-            "category": [
-                "lunch",
-                "dinner"
-            ],
-            "img": "https://assets.buendiatours.com/s3fs-public/styles/highlight_large/public/2020-05/bruselas-guia-comer-dormir-comer-patatas-fritas-cono_0.jpg?I3o9AYyyfBUxkixwFTLnc73BVi3dZP6o&itok=bZxSICnm",
-            "restaurantId": 3
-        },
-        {
-            "id": 8,
-            "name": "cafe con leche",
-            "price": 160,
-            "rating": 68,
-            "category": [
-                "breakfast"
-            ],
-            "img": "https://th.bing.com/th/id/OIP.cZH-p7DL3aLIHJmq6dyV3gHaE8?pid=ImgDet&rs=1",
-            "restaurantId": 3
-        },
-        {
-            "id": 9,
-            "name": "lemon pie",
-            "price": 500,
-            "rating": 79,
-            "category": [
-                "breakfast",
-                "dessert"
-            ],
-            "img": "https://th.bing.com/th/id/OIP.PhLVPkKX3xko1aDlHdehIAHaF4?pid=ImgDet&rs=1",
-            "restaurantId": 3
-        },
-        {
-            "id": 10,
-            "name": "chocotorta",
-            "price": 800,
-            "rating": 91,
-            "category": [
-                "dessert"
-            ],
-            "img": "https://th.bing.com/th/id/R.7802385bf86627a874cbf883476fed1c?rik=yv3lt%2fecvsRBWA&pid=ImgRaw&r=0",
-            "restaurantId": 3
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Noah's Bagle",
+      "rating": 4.5,
+      "lat": -38.542904,
+      "lon": -58.710933
+    },
+    {
+      "id": 2,
+      "name": "La Pampa",
+      "rating": 4.5,
+      "lat": -25.542904,
+      "lon": -58.710933
+    },
+    {
+      "id": 3,
+      "name": "Santa rosa",
+      "rating": 4.5,
+      "lat": -13.542904,
+      "lon": -58.710933
     }
+  ],
+  "categories": [
+    {
+      "id": "dinner"
+    },
+    {
+      "id": "lunch"
+    },
+    {
+      "id": "breakfast"
+    },
+    {
+      "id": 4,
+      "name": "dessert"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "donas",
+      "price": 25,
+      "rating": 99,
+      "category": [
+        "breakfast",
+        "dessert"
+      ],
+      "img": "https://th.bing.com/th/id/R.efa5f2d2f99535b34aca89283934d7f4?rik=CAmzLhynHzHTsQ&pid=ImgRaw&r=0",
+      "restaurantId": 1
+    },
+    {
+      "id": 2,
+      "name": "Milanesa",
+      "price": 1600,
+      "rating": 100,
+      "category": [
+        "lunch",
+        "dinner"
+      ],
+      "img": "https://vinomanos.com/wp-content/uploads/2019/09/Milanesa-perfecta.jpg",
+      "restaurantId": 1
+    },
+    {
+      "id": 3,
+      "name": "Hamburguesa",
+      "price": 900,
+      "rating": 30,
+      "category": [
+        "lunch",
+        "dinner"
+      ],
+      "img": "https://th.bing.com/th/id/R.45239b0e225c231bc173114a2869773d?rik=3j%2f35HmFiM%2bLGA&pid=ImgRaw&r=0",
+      "restaurantId": 1
+    },
+    {
+      "id": 4,
+      "name": "Café con medialunas",
+      "price": 400,
+      "rating": 80,
+      "category": [
+        "breakfast"
+      ],
+      "img": "https://mcdn.wallpapersafari.com/medium/42/80/4yhGSc.jpg",
+      "restaurantId": 2
+    },
+    {
+      "id": 5,
+      "name": "facturas",
+      "price": 100,
+      "rating": 19,
+      "category": [
+        "breakfast",
+        "dessert"
+      ],
+      "img": "https://img.milanuncios.com/fg/2968/55/296855420_9.jpg?VersionId=77Kl7XPu2_8iCLx_y10r7aTJMMcJpte8",
+      "restaurantId": 2
+    },
+    {
+      "id": 6,
+      "name": "Helado",
+      "price": 1200,
+      "rating": 73,
+      "category": [
+        "dessert"
+      ],
+      "img": "https://th.bing.com/th/id/OIP.yi-mkZVCC4aIv4ce80diyAHaFL?pid=ImgDet&w=1000&h=700&rs=1",
+      "restaurantId": 2
+    },
+    {
+      "id": 7,
+      "name": "cono de papas",
+      "price": 25,
+      "rating": 20,
+      "category": [
+        "lunch",
+        "dinner"
+      ],
+      "img": "https://assets.buendiatours.com/s3fs-public/styles/highlight_large/public/2020-05/bruselas-guia-comer-dormir-comer-patatas-fritas-cono_0.jpg?I3o9AYyyfBUxkixwFTLnc73BVi3dZP6o&itok=bZxSICnm",
+      "restaurantId": 3
+    },
+    {
+      "id": 8,
+      "name": "cafe con leche",
+      "price": 160,
+      "rating": 68,
+      "category": [
+        "breakfast"
+      ],
+      "img": "https://th.bing.com/th/id/OIP.cZH-p7DL3aLIHJmq6dyV3gHaE8?pid=ImgDet&rs=1",
+      "restaurantId": 3
+    },
+    {
+      "id": 9,
+      "name": "lemon pie",
+      "price": 500,
+      "rating": 79,
+      "category": [
+        "breakfast",
+        "dessert"
+      ],
+      "img": "https://th.bing.com/th/id/OIP.PhLVPkKX3xko1aDlHdehIAHaF4?pid=ImgDet&rs=1",
+      "restaurantId": 3
+    },
+    {
+      "id": 10,
+      "name": "chocotorta",
+      "price": 800,
+      "rating": 91,
+      "category": [
+        "dessert"
+      ],
+      "img": "https://th.bing.com/th/id/R.7802385bf86627a874cbf883476fed1c?rik=yv3lt%2fecvsRBWA&pid=ImgRaw&r=0",
+      "restaurantId": 3
+    }
+  ],
+  "cart": []
 }
