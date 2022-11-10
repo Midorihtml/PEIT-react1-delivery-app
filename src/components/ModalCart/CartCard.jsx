@@ -10,7 +10,6 @@ const SCREEN_WIDTH = window.innerWidth - 30;
 
 export const CartCard = ({ product, restaurants }) => {
 
-
     /* get restaurant name by restaurantId in product */
     const restaurantName = restaurants?.find((res) => res.id === product.restaurantId)?.name
 
@@ -20,10 +19,13 @@ export const CartCard = ({ product, restaurants }) => {
     /* A hook that is used to animate the card swipe to delete from cart. */
     const [{ x }, api] = useSpring(() => ({ x: 0 }))
 
-    const bind = useDrag(({ down, movement: [mx], direction, dragging, xy }) => {
+    const bind = useDrag(({ down, movement: [mx], direction, dragging }) => {
         api.start({ x: down ? direction[0] === -1 && mx : 0 })
-        if (dragging && direction[0] === -1 && mx < -SCREEN_WIDTH) {
-            deleteCartItem(product.id).then(dispatch({ type: "REMOVE_FROM_CART", payload: product.id }))
+
+        if (dragging && direction[0] === -1 && mx < -(SCREEN_WIDTH / 2)) {
+            api.start({ x: down ? direction[0] === -1 && mx : -SCREEN_WIDTH })
+            deleteCartItem(product.id)
+                .then(dispatch({ type: "REMOVE_FROM_CART", payload: product.id }))
         }
     })
 
